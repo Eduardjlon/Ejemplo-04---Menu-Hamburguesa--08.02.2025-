@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,22 +11,22 @@
 <body>
 
     <header>
-        <img class="logo" src="./imagen/USPGBANDW.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <!--NAV crea una sección de navegación en una página web-->
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="#" id="mostrar-inicio">Inicio</a></li>
-                <li><a href="#" id="mostrar-quienes-somos">Quiénes somos</a></li>
-                <li><a href="#" id="mostrar-servicios">Servicios</a></li>
-                <li><a href="#" id="mostrar-que-hacemos">Qué hacemos</a></li>
-                <li><a href="#" id="mostrar-formulario">Ingresar Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <img class="logo" src="./imagen/USPGBANDW.png" alt="Logo">
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="#" id="mostrar-inicio"><i class="bi bi-house-door"></i> Inicio</a></li>
+            <li><a href="#" id="mostrar-quienes-somos"><i class="bi bi-info-circle"></i> Quiénes somos</a></li>
+            <li><a href="#" id="mostrar-servicios"><i class="bi bi-briefcase"></i> Servicios</a></li>
+            <li><a href="#" id="mostrar-que-hacemos"><i class="bi bi-lightbulb"></i> Qué hacemos</a></li>
+            <li><a href="#" id="mostrar-formulario"><i class="bi bi-envelope"></i> Ingresar Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
     
-    <div class="carrusel-container">
+    <div class="carrusel-container" id="carrusel-container">
         <button id="flecha-izquierda" class="flecha flecha-izquierda">&#10094;</button>
         <div class="carrusel">
             <div class="imagenes">
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Sección de Inicio con Carreras debajo del Carrusel -->
-    <section id="inicio-seccion" class="inicio" style="background-color: rgb(0, 0, 0);">
+    <section id="inicio-seccion" class="inicio">
         <h2>Nuestras Carreras</h2>
         <div class="carreras-container">
             <div class="carrera">
@@ -68,9 +68,6 @@
         <p> 
             La visión de la Universidad San Pablo de Guatemala nació de la necesidad de contar con una institución que pudiera contribuir a la formación de la sociedad a través de una educación adecuada, por medio de la cual se puede impactar a los estudiantes no solo en el ámbito académico, sino también en los principios, valores éticos y morales para que, al ser profesionales, puedan ser agentes de transformación en la sociedad en donde actúen.
         </p>
-        <p>
-            Autorizada legalmente por el Consejo de la Enseñanza Privada Superior el 23 de marzo del 2006, la Universidad San Pablo de Guatemala inició sus actividades académicas con el programa de Maestría en Liderazgo Organizacional, enfocado en desarrollar líderes con las destrezas necesarias para dirigir organizaciones innovadoras, creativas, éticas y estratégicas. Se busca a través de una metodología altamente activa, participativa y aplicada al mundo real para provocar la investigación, la creación de propuestas, la generación y gestión del conocimiento, la planificación estratégica, la implementación y evaluación de iniciativas orientadas al desarrollo de la nación.
-        </p>
     </section>
 
  <!-- Sección de Ingresar Contactos -->
@@ -86,9 +83,7 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-    
 
     <script src="./js/main.js"></script>
 </body>
 </html>
-<!--Hola-->

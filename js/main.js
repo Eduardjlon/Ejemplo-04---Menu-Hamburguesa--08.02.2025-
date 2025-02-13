@@ -16,9 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Carrusel
     const carruselContainer = document.querySelector(".carrusel-container");
 
-    // Formulario de contacto
-    const contactoForm = document.getElementById("contacto-form");
-
     // Función para ocultar todas las secciones
     function ocultarSecciones() {
         [inicioSeccion, formularioContacto, quienesSomosSeccion, detalleCarrerasSeccion, queHacemosSeccion].forEach(seccion => {
@@ -27,37 +24,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Función para mostrar una sección específica
-    function mostrarSeccion(seccion) {
+    function mostrarSeccion(seccion, mostrarCarrusel = false) {
         ocultarSecciones();
-        carruselContainer.classList.add("oculto");
+        if (mostrarCarrusel) {
+            carruselContainer.classList.remove("oculto"); // Mostrar carrusel cuando sea la sección de inicio
+        } else {
+            carruselContainer.classList.add("oculto"); // Ocultar carrusel en otras secciones
+        }
         seccion?.classList.remove("oculto");
         seccion?.scrollIntoView({ behavior: "smooth" });
     }
 
     // Eventos de navegación
     [
-        [btnMostrarInicio, inicioSeccion], 
-        [btnMostrarFormulario, formularioContacto], 
-        [btnMostrarQuienesSomos, quienesSomosSeccion], 
-        [btnMostrarServicios, detalleCarrerasSeccion], 
-        [btnMostrarQueHacemos, queHacemosSeccion]
-    ].forEach(([boton, seccion]) => {
+        [btnMostrarInicio, inicioSeccion, true], // Mostrar carrusel solo en la sección de inicio
+        [btnMostrarFormulario, formularioContacto, false],
+        [btnMostrarQuienesSomos, quienesSomosSeccion, false],
+        [btnMostrarServicios, detalleCarrerasSeccion, false],
+        [btnMostrarQueHacemos, queHacemosSeccion, false]
+    ].forEach(([boton, seccion, mostrarCarrusel]) => {
         boton?.addEventListener("click", (e) => {
             e.preventDefault();
-            mostrarSeccion(seccion);
+            mostrarSeccion(seccion, mostrarCarrusel);
         });
     });
 
-    // Manejar el envío del formulario de contacto
-    contactoForm?.addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("✅ Contacto registrado con éxito!");
-        contactoForm.reset();  // Limpiar campos del formulario
-        ocultarSecciones();    // Ocultar todas las secciones, incluyendo el formulario
-        mostrarSeccion(inicioSeccion);  // Volver a mostrar la sección de inicio
-    });
-
-    // Funcionalidad para el carrusel de imágenes
+    // Carrusel de imágenes
     const flechaIzquierda = document.getElementById("flecha-izquierda");
     const flechaDerecha = document.getElementById("flecha-derecha");
     const imagenesCarrusel = document.querySelector(".imagenes");
