@@ -1,0 +1,247 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #000000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem;
+    background-color: #c21616dc;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    background-color: #c21616dc;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    background-color: #c21616dc;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #ffffff;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(255, 255, 255);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-list li a {
+        color: #ececec;
+    }
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3666f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.formulario.activo {
+    opacity: 1; /* Cuando se muestra, la opacidad es 1 */
+}
+
+.formulario input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background: #ffffff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Estilos para el carrusel */
+.carrusel-container {
+    display: flex;
+    justify-content: center; /* Centra el carrusel */
+    position: relative;
+    width: 100%; /* El carrusel ocupará el 100% del ancho de la pantalla */
+    overflow: hidden; /* Oculta las imágenes fuera del contenedor */
+}
+
+.carrusel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ajusta según sea necesario */
+    height: 60vh; /* Altura del carrusel al 30% de la altura de la ventana */
+}
+
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%; /* Asegura que las imágenes ocupen toda la altura del contenedor */
+}
+
+.imagen {
+    min-width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+    height: 100%; /* Asegura que las imágenes ocupen toda la altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
+    transition: opacity 0.5s ease;
+}
+
+/* Estilos para las flechas */
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha-izquierda {
+    left: 10px; /* Posición de la flecha izquierda */
+}
+
+.flecha-derecha {
+    right: 10px; /* Posición de la flecha derecha */
+}
+
+.inicio {
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo-principal {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.carreras-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carrera {
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(255, 0, 0);
+}
+
+.carrera h3 {
+    color: #06bc5b;
+}
+
+.carrera-detalle {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    margin: 1rem 0;
+}
+
+.carrera-detalle h3 {
+    color: #06bc5b;
+}
+
+#inicio-seccion {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+    margin: 1rem 0;
+}
+
+#inicio-seccion h2,
+#inicio-seccion h3,
+#inicio-seccion p {
+    color: white;
+}
+
+#quienes-somos {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+    margin: 1rem 0;
+}
+
+#quienes-somos h3 {
+    color: white;
+}

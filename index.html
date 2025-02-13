@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad San Pablo de Guatemala</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="./imagen/USPGBANDW.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <!--NAV crea una sección de navegación en una página web-->
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#" id="mostrar-inicio">Inicio</a></li>
+                <li><a href="#" id="mostrar-quienes-somos">Quiénes somos</a></li>
+                <li><a href="#" id="mostrar-servicios">Servicios</a></li>
+                <li><a href="#" id="mostrar-que-hacemos">Qué hacemos</a></li>
+                <li><a href="#" id="mostrar-formulario">Ingresar Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="carrusel-container">
+        <button id="flecha-izquierda" class="flecha flecha-izquierda">&#10094;</button>
+        <div class="carrusel">
+            <div class="imagenes">
+                <img src="./imagen/Logo Universidad.jpg" alt="Imagen 1" class="imagen">
+                <img src="https://aprende.guatemala.com/wp-content/uploads/2021/07/Lista-de-carreras-de-la-Universidad-San-Pablo-de-Guatemala-2.jpg" alt="Imagen 2" class="imagen">
+                <img src="https://cumbremigratoria.org/wp-content/uploads/2024/07/usap_top_building.jpg" alt="Imagen 3" class="imagen">
+                <img src="https://image.free-apply.com/gallery/l/uni/gallery/lg/1032000010/e29f93c1a76fa9885eeba4a593385494eaad1e5b.jpg" alt="Imagen 4" class="imagen">       
+            </div>
+        </div>
+        <button id="flecha-derecha" class="flecha flecha-derecha">&#10095;</button>
+    </div>
+
+    <!-- Sección de Inicio con Carreras debajo del Carrusel -->
+    <section id="inicio-seccion" class="inicio" style="background-color: rgb(0, 0, 0);">
+        <h2>Nuestras Carreras</h2>
+        <div class="carreras-container">
+            <div class="carrera">
+                <h3>Ingeniería en Sistemas</h3>
+                <p>Aprende a desarrollar software y administrar redes.</p>
+            </div>
+            <div class="carrera">
+                <h3>Administración de Empresas</h3>
+                <p>Forma líderes en el mundo de los negocios y la gestión.</p>
+            </div>
+            <div class="carrera">
+                <h3>Psicología</h3>
+                <p>Comprende la mente humana y ayuda a las personas.</p>
+            </div>
+            <div class="carrera">
+                <h3>Diseño Gráfico</h3>
+                <p>Crea experiencias visuales impactantes con creatividad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Quiénes Somos -->
+    <section id="quienes-somos" class="oculto">
+        <h2>Quiénes Somos</h2>
+        <p> 
+            La visión de la Universidad San Pablo de Guatemala nació de la necesidad de contar con una institución que pudiera contribuir a la formación de la sociedad a través de una educación adecuada, por medio de la cual se puede impactar a los estudiantes no solo en el ámbito académico, sino también en los principios, valores éticos y morales para que, al ser profesionales, puedan ser agentes de transformación en la sociedad en donde actúen.
+        </p>
+        <p>
+            Autorizada legalmente por el Consejo de la Enseñanza Privada Superior el 23 de marzo del 2006, la Universidad San Pablo de Guatemala inició sus actividades académicas con el programa de Maestría en Liderazgo Organizacional, enfocado en desarrollar líderes con las destrezas necesarias para dirigir organizaciones innovadoras, creativas, éticas y estratégicas. Se busca a través de una metodología altamente activa, participativa y aplicada al mundo real para provocar la investigación, la creación de propuestas, la generación y gestión del conocimiento, la planificación estratégica, la implementación y evaluación de iniciativas orientadas al desarrollo de la nación.
+        </p>
+    </section>
+
+ <!-- Sección de Ingresar Contactos -->
+    <section id="formulario-contacto" class="oculto">
+        <h2>Formulario de Contacto</h2>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
