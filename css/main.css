@@ -239,9 +239,13 @@ h2, h3, h4 {
 }
 
 .carrera h3 {
-    color: #c21616; /* Rojo intenso de la universidad */
-    transition: color 0.3s ease;
+    font-size: 22px; /* Aumenta el tamaño del título */
+    font-weight: bold;
+    text-align: center;
+    color: #8B0000; /* Color rojo oscuro */
+    margin: 10px 0;
 }
+
 
 .carrera:hover h3 {
     color: #06bc5b; /* Cambiar color del texto al pasar el mouse */
