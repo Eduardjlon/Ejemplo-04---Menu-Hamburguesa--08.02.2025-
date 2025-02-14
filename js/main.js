@@ -19,7 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
             seccion?.classList.add("oculto");
         });
     }
+  // Sección que contiene "Bienvenido", "Información" y "Estudia en San Pablo"
+    const seccionInicioCompleta = document.querySelector(".seccion-inicio-completa");
 
+    // Función para ocultar todas las secciones
+    function ocultarSecciones() {
+        [inicioSeccion, quienesSomosSeccion, detalleCarrerasSeccion, queHacemosSeccion].forEach(seccion => {
+            seccion?.classList.add("oculto");
+        });
+    }
     // Función para mostrar una sección específica
     function mostrarSeccion(seccion, mostrarCarrusel = false) {
         ocultarSecciones();

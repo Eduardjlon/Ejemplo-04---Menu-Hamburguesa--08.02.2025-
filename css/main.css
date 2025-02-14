@@ -248,7 +248,7 @@ h2, h3, h4 {
 
 
 .carrera:hover h3 {
-    color: #06bc5b; /* Cambiar color del texto al pasar el mouse */
+    color: #000000; /* Cambiar color del texto al pasar el mouse */
 }
 
 /* Formulario de contacto */
@@ -280,3 +280,93 @@ h2, h3, h4 {
     cursor: pointer;
     border-radius: 5px;
 }
+.info-section {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.estudia-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.grid-item {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bg-orange { background: #FFA500; }
+.bg-red { background: #DC143C; }
+.bg-gray { background: #555; }
+.bg-light-red { background: #FF6666; }
+
+/* Sección de Bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.bienvenida h1 {
+    font-size: 4rem; /* Aumenta el tamaño del título */
+    font-weight: bold;
+    color: #c21616; /* Rojo principal */
+    margin-bottom: 0.5rem;
+}
+
+.bienvenida p {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif; /* Fuente elegante */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Sección de Información Universidad */
+.info-universidad {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #555;
+}
+/* Sección de Información Universidad */
+.info-universidad {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estudia en San Pablo */
+.estudia {
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño grande */
+    font-weight: bold;
+    color: #c21616; /* Rojo principal */
+    margin-top: 1rem;
+}
+

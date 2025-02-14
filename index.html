@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header>
+<header>
     <img class="logo" src="./imagen/USPGBANDW.png" alt="Logo">
     <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
     <nav class="nav" id="nav">
@@ -27,61 +27,57 @@
     </nav>
 </header>
 
-    
-    <div class="carrusel-container" id="carrusel-container">
-        <button id="flecha-izquierda" class="flecha flecha-izquierda">&#10094;</button>
-        <div class="carrusel">
-            <div class="imagenes">
-                <img src="./imagen/Logo Universidad.jpg" alt="Imagen 1" class="imagen">
-                <img src="https://aprende.guatemala.com/wp-content/uploads/2021/07/Lista-de-carreras-de-la-Universidad-San-Pablo-de-Guatemala-2.jpg" alt="Imagen 2" class="imagen">
-                <img src="https://cumbremigratoria.org/wp-content/uploads/2024/07/usap_top_building.jpg" alt="Imagen 3" class="imagen">
-                <img src="https://image.free-apply.com/gallery/l/uni/gallery/lg/1032000010/e29f93c1a76fa9885eeba4a593385494eaad1e5b.jpg" alt="Imagen 4" class="imagen">       
-            </div>
+<div class="carrusel-container" id="carrusel-container">
+    <button id="flecha-izquierda" class="flecha flecha-izquierda">&#10094;</button>
+    <div class="carrusel">
+        <div class="imagenes">
+            <img src="./imagen/Logo Universidad.jpg" alt="Imagen 1" class="imagen">
+            <img src="https://aprende.guatemala.com/wp-content/uploads/2021/07/Lista-de-carreras-de-la-Universidad-San-Pablo-de-Guatemala-2.jpg" alt="Imagen 2" class="imagen">
+            <img src="https://cumbremigratoria.org/wp-content/uploads/2024/07/usap_top_building.jpg" alt="Imagen 3" class="imagen">
+            <img src="https://image.free-apply.com/gallery/l/uni/gallery/lg/1032000010/e29f93c1a76fa9885eeba4a593385494eaad1e5b.jpg" alt="Imagen 4" class="imagen">       
         </div>
-        <button id="flecha-derecha" class="flecha flecha-derecha">&#10095;</button>
     </div>
+    <button id="flecha-derecha" class="flecha flecha-derecha">&#10095;</button>
+</div>
 
-    <!-- Sección de Inicio con Carreras debajo del Carrusel -->
-    <section id="inicio-seccion" class="inicio">
-        <h2>Nuestras Carreras</h2>
-        <div class="carreras-container">
-            <div class="carrera">
-                <h3>Ingeniería en Sistemas</h3>
-            </div>
-            <div class="carrera">
-                <h3>Administración de Empresas</h3>
-            </div>
-            <div class="carrera">
-                <h3>Psicología</h3>
-            </div>
-            <div class="carrera">
-                <h3>Diseño Gráfico</h3>
-            </div>
-        </div>        
-    </section>
 
-    <!-- Sección de Quiénes Somos -->
-    <section id="quienes-somos" class="oculto">
-        <h2>Quiénes Somos</h2>
-        <p> 
-            La visión de la Universidad San Pablo de Guatemala nació de la necesidad de contar con una institución que pudiera contribuir a la formación de la sociedad a través de una educación adecuada, por medio de la cual se puede impactar a los estudiantes no solo en el ámbito académico, sino también en los principios, valores éticos y morales para que, al ser profesionales, puedan ser agentes de transformación en la sociedad en donde actúen.
-        </p>
-    </section>
+<!-- Sección de Carreras -->
+<section id="inicio-seccion" class="inicio">
+    <div class = "bienvenida">
+    <h1>Bienvenido</h1>
+    <p><em>Universidad San Pablo de Guatemala</em></p>
+    </div>
+    <div class="info-universidad">
+    <p>La Universidad San Pablo de Guatemala inició sus actividades académicas con el programa de Maestría en Liderazgo Organizacional, enfocado en desarrollar líderes con las destrezas necesarias para dirigir organizaciones innovadoras, creativas, éticas y estratégicas.</p>
+    <p>Se busca a través de una metodología altamente activa, participativa y aplicada al mundo real para provocar la investigación, la creación de propuestas, la generación y gestión del conocimiento, la planificación estratégica, la implementación y evaluación de iniciativas orientadas al desarrollo de la nación.</p>
+    </div>
+    <h2 class="estudia">¡Estudia en San Pablo!</h2>
+    </div>
+    <h2>Nuestras Carreras</h2>
+    <div class="carreras-container">
+        <div class="carrera">
+            <h3>Ingeniería en Sistemas</h3>
+        </div>
+        <div class="carrera">
+            <h3>Administración de Empresas</h3>
+        </div>
+        <div class="carrera">
+            <h3>Psicología</h3>
+        </div>
+        <div class="carrera">
+            <h3>Diseño Gráfico</h3>
+        </div>
+    </div>        
+</section>
 
- <!-- Sección de Ingresar Contactos -->
-    <section id="formulario-contacto" class="oculto">
-        <h2>Formulario de Contacto</h2>
-        <form id="contacto-form">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+<!-- Sección de Quiénes Somos -->
+<section id="quienes-somos" class="oculto">
+    <h2>Quiénes Somos</h2>
+    <p> 
+        La visión de la Universidad San Pablo de Guatemala nació de la necesidad de contar con una institución que pudiera contribuir a la formación de la sociedad a través de una educación adecuada, por medio de la cual se puede impactar a los estudiantes no solo en el ámbito académico, sino también en los principios, valores éticos y morales para que, al ser profesionales, puedan ser agentes de transformación en la sociedad en donde actúen.
+    </p>
+</section>
 
-    <script src="./js/main.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
